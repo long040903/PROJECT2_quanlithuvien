@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="570.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StaticisChartController">
+	<children>
+		<BorderPane layoutX="-87.0" layoutY="-107.0" prefHeight="93.0" prefWidth="360.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<center>
+				<Pane prefHeight="533.0" prefWidth="721.0" BorderPane.alignment="CENTER">
+					<children>
+						<BarChart fx:id="barChart" layoutX="26.0" layoutY="32.0" prefHeight="506.0" prefWidth="751.0" title="Biểu đồ thống kê số lượng sách được mượn theo tháng">
+							<xAxis>
+								<CategoryAxis side="BOTTOM" fx:id="xAxis" />
+							</xAxis>
+							<yAxis>
+								<NumberAxis fx:id="yAxis" side="LEFT" />
+							</yAxis>
+						</BarChart>
+					</children>
+				</Pane>
+			</center>
+		</BorderPane>
+	</children>
+</AnchorPane>
